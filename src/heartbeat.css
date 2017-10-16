@@ -1,0 +1,44 @@
+.heartbeat {
+  position: fixed;
+  bottom: 30%;
+  right: 10px;
+  border-radius: 50%;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.heart {
+  width: 100px;
+}
+
+.steady {
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
