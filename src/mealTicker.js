@@ -15,14 +15,39 @@ export default class extends React.Component {
         dinner: ''
       }
     }
+
+    this.getWeather = this.getWeather.bind(this)
   }
 
   componentWillMount () {
+    const currentFood = setInterval(this.getWeather, 1800000)
     contentfulClient.getEntries({
       'content_type': 'cafeteria'
     })
       .then(res => {
         const today = Moment().format('YYYY-MM-DD')
+        console.log(res.items)
+        res.items.forEach( item => {
+          if (item.fields.date === today) {
+            let todayMenu = {
+              breakfast: item.fields.breakfast,
+              lunch: item.fields.lunch,
+              dinner: item.fields.dinner
+            }
+            this.setState({meals: todayMenu})
+          }
+        })
+      })
+      .catch(console.error)
+  }
+
+  getWeather () {
+    contentfulClient.getEntries({
+      'content_type': 'cafeteria'
+    })
+      .then(res => {
+        const today = Moment().format('YYYY-MM-DD')
+        console.log(res.items)
         res.items.forEach( item => {
           if (item.fields.date === today) {
             let todayMenu = {
