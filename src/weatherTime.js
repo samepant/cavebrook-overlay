@@ -72,7 +72,7 @@ export default class extends React.Component {
         <svg viewBox="0 -20 500 500" className='time'>
         <path id="curve" d="M 100 250 A 50 50 0 1 1 400 150" />
         <text width="500">
-          <textPath xlinkHref="#curve" startOffset='15%'>
+          <textPath xlinkHref="#curve" startOffset='28%'>
             {this.state.time}
           </textPath>
         </text>

@@ -9,8 +9,8 @@
   position: fixed;
   bottom: -220px;
   right: -205px;
-  width: 500px;
-  font-size: 80px;
+  width: 425px;
+  font-size: 50px;
   stroke: red;
   fill: white;
   transform: rotateZ(-22deg);
@@ -22,18 +22,19 @@
 
 .icon {
   position: fixed;
-  bottom: -26px;
-  right: 41px;
+  bottom: -35px;
+  right: 25px;
 }
 
 .icon img {
-  width: 150px;
+  width: 120px;
 }
 
 .temp {
   position: fixed;
+  color: white;
   right: 5px;
-  bottom: 104px;
+  bottom: 75px;
   z-index: 100;
-  font-size: 80px;
+  font-size: 50px;
 }

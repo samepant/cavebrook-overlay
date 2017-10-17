@@ -33,14 +33,14 @@
 .ticker-wrap {
   width: 100%;
   overflow: hidden;
-  height: 4rem;
+  height: 2rem;
   padding-left: 100%;
 }
 
 .ticker {
   display: inline-block;
-  height: 4rem;
-  line-height: 4rem;
+  height: 2rem;
+  line-height: 2rem;
   white-space: nowrap;
   padding-right: 100%;
   -webkit-animation-iteration-count: infinite;
@@ -55,7 +55,7 @@
 .ticker__item {
   display: inline-block;
   padding: 0 2rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -79,5 +79,5 @@
 }
 
 .archer img {
-  width: 90px;
+  width: 60px;
 }
