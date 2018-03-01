@@ -68,13 +68,13 @@ export default class extends React.Component {
         <div className='ticker-wrap'>
           <div className='ticker'>
             <div className='ticker__item breakfast'>
-              <span className='meal-title'>Breakfast: </span>{this.state.meals.breakfast}
+              § looking directly into the sun is an immanent and dialectical procedure, the source of a radically democratic mode of knowledge, and the only way to free humanity from oppression. It’s the highest crime, not because it’s forbidden by law, but because every unjust law depends on our refusal to stare into the sun.™ 
             </div>
             <div className='ticker__item lunch'>
-              <span className='meal-title'>Lunch: </span>{this.state.meals.lunch}
+              § Andy: So what do you do? Frances: Eh… It’s kinda hard to explain. Andy: Because what you do is complicated? Frances: Eh… Because I don’t really do it.™
             </div>
             <div className='ticker__item dinner'>
-              <span className='meal-title'>Dinner: </span>{this.state.meals.dinner} 
+               § Hypocrite that you are, for you trust the chemicals in your brain to tell you they are chemicals. All knowledge is ultimately based on that which we cannot prove. Will you fight? Or will you perish like a dog?™
             </div>
           </div>  
         </div>
